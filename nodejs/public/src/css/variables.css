@@ -1,0 +1,19 @@
+:root {
+  --font-family: 'IBMPlexSansArabic', sans-serif;
+  --clr-primary: #06c08e;
+  --clr-primary-hover: #059770;
+  --clr-secondary: #005374;
+  --clr-white-500: #ecfffa;
+  --clr-white-800: #f4f4f4;
+  --clr-white-900: #fdfdfd;
+  --clr-black-500: #1d2220;
+  --clr-black-500-10: rgba(1, 29, 21, 0.1);
+  --clr-black-500-30: rgba(1, 29, 21, 0.3);
+  --clr-black-500-60: rgba(1, 29, 21, 0.6);
+  --clr-black-500-80: rgba(1, 29, 21, 0.8);
+  --clr-black-900: #222;
+  --clr-red-500: #c00000;
+  --clr-red-500-20: rgba(192, 0, 0, 0.2);
+  --clr-link: #0000ee;
+  --clr-link-hover: #04049b;
+}

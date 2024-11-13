@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>data-z | Dashboard</title>
+    <link rel="stylesheet" href="/src/css/main.css" />
+  </head>
+  <body class="dashboard">
+    <div class="sidebar">
+      <div class="logo">
+        <img src="/src/img/logo.svg" alt="data-z logo" />
+      </div>
+      <div class="links">
+        <h3>Pages</h3>
+        <ul>
+          <li>
+            <a href="/" class="active">
+              <i class="ico ico-dashboard"></i> Dashboard
+            </a>
+          </li>
+          <li>
+            <a href="/chat"><i class="ico ico-plus"></i> New Chat </a>
+          </li>
+          <li>
+            <a href="#" class="toggle-uploader"
+              ><i class="ico ico-upload"></i> Upload New File
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="links">
+        <h3>Recent Chats</h3>
+        <ul>
+          <% if (recentChats.length > 0) { %> <%
+          recentChats.forEach(function(chat) { %>
+          <li>
+            <a href="/chat/<%= chat.uuid %>">
+              <i class="ico ico-chat"></i>
+              <span
+                ><%= chat.title.length > 15 ? chat.title.substring(0, 12) +
+                '...' : chat.title %></span
+              >
+              <a href="/chat/<%= chat.uuid %>/delete" class="delete"
+                ><i class="ico ico-close"></i
+              ></a>
+            </a>
+          </li>
+          <% }); %> <% } else { %>
+          <p class="empty-list">No recent chats available.</p>
+          <% } %>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="overview">
+        <h2>
+          Overview
+          <!-- <div class="filter-container">
+            <label for="filter"> (Toggle filter menu) </label>
+            <input type="checkbox" id="filter" />
+            <div class="filter-menu">
+              <div class="input-group">
+                <i class="ico ico-search"></i>
+                <input type="text" id="filter-input" placeholder="Search" />
+              </div>
+              <ul>
+                <li>
+                  <input type="checkbox" id="filter-1" checked />
+                  <label for="filter-1">Filter 1</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="filter-2" checked />
+                  <label for="filter-2">Filter 2</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="filter-3" checked />
+                  <label for="filter-3">Filter 3</label>
+                </li>
+              </ul>
+            </div>
+          </div> -->
+        </h2>
+        <div class="charts">
+          <div class="chart chart-1">
+            <canvas id="pie-chart"></canvas>
+          </div>
+          <div class="chart chart-2">
+            <canvas id="grouped-chart"></canvas>
+          </div>
+          <div class="chart chart-3">
+            <canvas id="line-chart"></canvas>
+          </div>
+          <div class="chart chart-4">
+            <canvas id="bar-chart"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="recent">
+        <h2>
+          Your Files
+          <a href="#" class="toggle-uploader"
+            >(drag and drop to upload new file)</a
+          >
+        </h2>
+        <div class="files">
+          <div class="file header">
+            <div class="name">File name</div>
+            <div class="company">Company name</div>
+            <div class="quarter">Quarter</div>
+            <div class="year">Year</div>
+            <div class="date">Upload date</div>
+            <div class="action"></div>
+          </div>
+          <% if (files.length > 0) { %> <% files.forEach(function(file) { %>
+          <div class="file">
+            <div class="name"><%= file.originalname %></div>
+            <div class="company"><%= file.companyName %></div>
+            <div class="quarter"><%= file.quarter %></div>
+            <div class="year"><%= file.year %></div>
+            <div class="date">
+              <%= new Date(file.uploadTime).toLocaleDateString('en-GB') %>
+            </div>
+            <div class="action">
+              <a href="/files/<%= file.id %>/delete" class="delete"
+                ><i class="ico ico-close"></i
+              ></a>
+            </div>
+          </div>
+          <% }); %> <% } else { %>
+          <p class="empty-table">No files uploaded yet.</p>
+          <% } %>
+        </div>
+      </div>
+    </div>
+    <div class="uploader">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="header">
+          <div>
+            <h2>Upload New File</h2>
+            <p class="reminder">You can only upload one file</p>
+          </div>
+
+          <p class="error">Wrong file type</p>
+          <a href="#" class="close"><i class="ico ico-close"></i></a>
+        </div>
+        <div class="dropzone" id="dropzone">
+          <div class="text">
+            <p>Drag and drop your file here</p>
+            <span>or</span>
+            <button>Browse file</button>
+          </div>
+        </div>
+        <div class="step-2">
+          <h3>Step 2: Confirm Details</h3>
+          <form id="confirm-details-form" enctype="multipart/form-data">
+            <input type="file" name="file" id="file" />
+            <div class="input-group">
+              <label for="company-name">Company Name</label>
+              <input
+                type="text"
+                id="company-name"
+                name="company-name"
+                placeholder="Company Name"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="quarter">Quarter</label>
+              <select id="quarter" name="quarter" required>
+                <option value="Q1">Q1</option>
+                <option value="Q2">Q2</option>
+                <option value="Q3">Q3</option>
+                <option value="Q4">Q4</option>
+                <option value="annual">Annual</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <label for="year">Year</label>
+              <input
+                type="number"
+                id="year"
+                name="year"
+                min="2000"
+                max="2100"
+                required
+                placeholder="Year"
+              />
+            </div>
+            <button type="submit">Upload</button>
+          </form>
+        </div>
+        <div class="step-3">
+          <p>Your file is being processed. Please wait...</p>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/src/js/charts/utils.js"></script>
+    <script src="/src/js/charts/main.js"></script>
+    <!-- <script src="/src/js/filter.js"></script> -->
+    <script src="/src/js/uploader.js"></script>
+  </body>
+</html>

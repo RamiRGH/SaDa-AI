@@ -1,0 +1,81 @@
+.ico {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: var(--clr-black-500);
+}
+
+.ico-16 {
+  width: 16px;
+  height: 16px;
+}
+
+.ico-48 {
+  width: 48px;
+  height: 48px;
+}
+
+.ico-64 {
+  width: 64px;
+  height: 64px;
+}
+
+.ico-dashboard {
+  -webkit-mask: url('../img/icons/dashboard.svg') no-repeat center;
+  mask: url('../img/icons/dashboard.svg') no-repeat center;
+}
+
+.ico-chat {
+  -webkit-mask: url('../img/icons/chat.svg') no-repeat center;
+  mask: url('../img/icons/chat.svg') no-repeat center;
+}
+
+.ico-file {
+  -webkit-mask: url('../img/icons/file.svg') no-repeat center;
+  mask: url('../img/icons/file.svg') no-repeat center;
+}
+
+.ico-more {
+  -webkit-mask: url('../img/icons/more.svg') no-repeat center;
+  mask: url('../img/icons/more.svg') no-repeat center;
+}
+
+.ico-plus {
+  -webkit-mask: url('../img/icons/plus.svg') no-repeat center;
+  mask: url('../img/icons/plus.svg') no-repeat center;
+}
+
+.ico-send {
+  -webkit-mask: url('../img/icons/send.svg') no-repeat center;
+  mask: url('../img/icons/send.svg') no-repeat center;
+}
+
+.ico-settings {
+  -webkit-mask: url('../img/icons/settings.svg') no-repeat center;
+  mask: url('../img/icons/settings.svg') no-repeat center;
+}
+
+.ico-upload {
+  -webkit-mask: url('../img/icons/upload.svg') no-repeat center;
+  mask: url('../img/icons/upload.svg') no-repeat center;
+}
+
+.ico-close {
+  -webkit-mask: url('../img/icons/close.svg') no-repeat center;
+  mask: url('../img/icons/close.svg') no-repeat center;
+}
+
+.ico-home {
+  -webkit-mask: url('../img/icons/home.svg') no-repeat center;
+  mask: url('../img/icons/home.svg') no-repeat center;
+}
+
+.ico-back {
+  -webkit-mask: url('../img/icons/back.svg') no-repeat center;
+  mask: url('../img/icons/back.svg') no-repeat center;
+}
+
+.ico-search {
+  -webkit-mask: url('../img/icons/search.svg') no-repeat center;
+  mask: url('../img/icons/search.svg') no-repeat center;
+}

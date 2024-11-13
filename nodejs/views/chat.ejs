@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>data-z | Chat</title>
+    <link rel="stylesheet" href="/src/css/main.css" />
+    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+  </head>
+  <body class="chat">
+    <div class="header">
+      <a href="/"><i class="ico ico-home"></i></a>
+      <h1><%= title %></h1>
+    </div>
+    <div class="container">
+      <div class="content">
+        <% if (chatMessages.length > 0) { %>
+          <% chatMessages.forEach(function(msg) { %>
+            <div class="question">
+              <div class="text">
+          <p><%= msg.human %></p>
+              </div>
+            </div>
+            <div class="answer">
+              <div class="avatar">
+          <img src="/src/img/avatar.png" alt="avatar" />
+              </div>
+              <div class="text">
+          <div><md-block><%= msg.ai %></md-block></div>
+              </div>
+            </div>
+          <% }); %>
+        <% } else { %>
+          <p>No messages yet.</p>
+        <% } %>
+      </div>
+      <div class="input">
+        <form action="/chat/<%= uuid %>" method="post">
+          <textarea placeholder="Ask a question" name="message"></textarea>
+          <button type="submit"><i class="ico ico-send"></i></button>
+        </form>
+      </div>
+    </div>
+    <script type="module">
+      import {
+        MarkdownBlock,
+        MarkdownSpan,
+        MarkdownElement,
+      } from 'https://md-block.verou.me/md-block.js';
+    </script>
+    <script src="/src/js/chat.js"></script>
+  </body>
+</html>
