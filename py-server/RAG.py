@@ -317,8 +317,9 @@ def call_RAG(query:str, past_messages=[], chat_name=False) -> list:
             for doc in text:
                 doc.metadata['filename'] = doc.metadata.pop('source').split('/')[-1]
             docs.extend(text)   
-        else:
-            return [1, "Unsupported file"]
+    
+    if not docs:
+        return [1, "Upload files"]
 
     # Split and store documents
     chunks = split_documents(docs)
