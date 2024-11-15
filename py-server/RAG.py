@@ -9,6 +9,7 @@
 # %pip install xlrd
 # %pip install xformers
 # %pip install pdf2image
+# %pip install flask
 
 ### NOTE ###
 # The embedding model (Jina Embeddings V3) and the LLM (Llama 3.2 90b) are used through API services offered by Jina AI and Groq respictively.
