@@ -4,3 +4,4 @@ py-server/.langchain.db
 /py-server/Data/ارامكو
 /py-server/Data/علم
 py-server/.env
+.env
