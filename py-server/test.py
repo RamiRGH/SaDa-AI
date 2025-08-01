@@ -59,9 +59,9 @@ def load_notebook_functions(
     except FileNotFoundError:
         print(f"❌ Error: Notebook not found at {nb_path}")
         raise
-    except nbformat.reader.NotJupyterNotebookError: # Corrected exception name
-        print(f"❌ Error: {nb_path} is not a valid Jupyter notebook or is corrupted.")
-        raise
+    # except nbformat.reader.NotJupyterNotebookError: # Corrected exception name
+    #     print(f"❌ Error: {nb_path} is not a valid Jupyter notebook or is corrupted.")
+    #     raise
     except SyntaxError as e: # Catch SyntaxError specifically
         print(f"❌ Syntax Error in notebook {nb_path}: {e}")
         print("💡 Hint: This often means your notebook contains non-Python commands (like magic commands % or ! commands) in its code cells.")

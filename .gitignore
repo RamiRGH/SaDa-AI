@@ -1,0 +1,6 @@
+py-server/.langchain.db
+/py-server/emb_cache
+/py-server/vec_db
+/py-server/Data/ارامكو
+/py-server/Data/علم
+py-server/.env
