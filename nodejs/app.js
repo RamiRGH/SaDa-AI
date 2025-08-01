@@ -371,7 +371,7 @@ app.post("/chat/:uuid", async (req, res) => {
       fs.readFile(chatsDbPath, "utf8", (err, data) => {
         if (err) {
           console.error("Error reading chats-db.json:", err);
-          return res.status(500).send("Error reading chats-db.json");
+          return res.status(500).json({ error: "Error reading chats-db.json" });
         }
 
         let chatsDb = [];
@@ -397,7 +397,9 @@ app.post("/chat/:uuid", async (req, res) => {
             (writeErr) => {
               if (writeErr) {
                 console.error("Error writing to chats-db.json:", writeErr);
-                return res.status(500).send("Error updating chats-db.json");
+                return res
+                  .status(500)
+                  .json({ error: "Error updating chats-db.json" });
               }
 
               console.log(`Updated title for UUID ${uuid} in chats-db.json.`);
@@ -421,21 +423,14 @@ app.post("/chat/:uuid", async (req, res) => {
       }
     }
 
-    // Render the chat page with the response from Flask
+    // Create the new message object
     const newMessage = {
       human: message,
       ai: response.data[1], // The response you got from Flask
     };
     past.push(newMessage);
 
-    res.render("chat", {
-      uuid,
-      title,
-      chatMessages: past,
-    });
-
-    // If needed, you can save the new message into the chat file (you can uncomment this part if required)
-
+    // Update the chats-db.json with the new lastMessage timestamp
     const chatsDbData = fs.readFileSync(chatsDbPath, "utf8");
     const chatsDb = JSON.parse(chatsDbData);
 
@@ -449,6 +444,7 @@ app.post("/chat/:uuid", async (req, res) => {
       console.log(`Updated last message for UUID ${uuid} in chats-db.json.`);
     }
 
+    // Save the new message to the chat file
     if (fs.existsSync(chatFilePath)) {
       // If the file exists, read the current chat data
       const chatFileData = fs.readFileSync(chatFilePath, "utf8");
@@ -469,26 +465,20 @@ app.post("/chat/:uuid", async (req, res) => {
       const initialData = [newMessage];
       fs.writeFileSync(chatFilePath, JSON.stringify(initialData, null, 2));
     }
+
+    // Return JSON response for AJAX requests
+    res.json({
+      success: true,
+      aiResponse: response.data[1],
+      title: title,
+    });
   } catch (error) {
     console.error("Error during request to Flask:", error);
 
-    // Get the title from chats-db.json for error case
-    let errorTitle = "Chat Error";
-    try {
-      const chatsDbData = fs.readFileSync(chatsDbPath, "utf8");
-      const chatsDb = JSON.parse(chatsDbData);
-      const chat = chatsDb.find((chat) => chat.uuid === uuid);
-      if (chat) {
-        errorTitle = chat.title;
-      }
-    } catch (dbError) {
-      console.error("Error reading chat title for error case:", dbError);
-    }
-
-    res.render("chat", {
-      uuid,
-      title: errorTitle,
-      chatMessages: [], // Provide empty array for error case
+    // Return JSON error response
+    res.status(500).json({
+      success: false,
+      error: "Failed to process your message. Please try again.",
     });
   }
 });

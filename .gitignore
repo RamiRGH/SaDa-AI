@@ -6,3 +6,5 @@ py-server/.langchain.db
 py-server/.env
 .env
 /nodejs/node_modules
+nodejs/chats-db.json
+/nodejs/chats
