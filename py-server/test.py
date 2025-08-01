@@ -150,7 +150,7 @@ load_notebook_functions("RAG.ipynb", debug=False)
 # ----------------------------------------------------------------------------------------
 
 
-message = """What is revenue of ELM in Q2 2024?"""
+message = """In which quarter did the company achieve the most user growth for every dollar spent on Sales and Marketing?"""
 past_messages = []
-result = call_RAG(message)
-print(result[1])
+for result in call_RAG(message)[1]:
+    print(result, end="", flush=True)
