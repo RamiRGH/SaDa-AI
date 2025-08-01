@@ -1,0 +1,135 @@
+**Q2 2025 Report for FinSecure Corp.**
+**For the Quarter Ended: June 30, 2025**
+
+---
+**1. Management Overview**
+---
+To our valued stakeholders,
+FinSecure Corp. continued its strong growth trajectory through the second quarter of 2025.
+We are pleased to report accelerated revenue growth and robust user engagement, demonstrating the increasing value of our platform.
+Key strategic initiatives, particularly in product development and partnership discussions, have progressed significantly.
+Our solid financial position allows us to continue investing in innovation and market expansion with confidence.
+
+---
+**2. Q2 2025 Financial Highlights**
+---
+Total Quarterly Revenue: 4,550,000 SAR
+Quarterly Revenue Growth vs. Q2 2024: 19.7%
+Net Profit After Tax: 1,135,200 SAR
+Total Transaction Volume (TTV) for Q2: 255,000,000 SAR
+Total Active Users at Quarter-End: 1,525,500
+New Users Acquired in Q2: 175,300
+
+---
+**3. Income Statement (For the Three Months Ended June 30, 2025)**
+---
+**Revenue**
+Transaction Fees Revenue: 2,850,000 SAR
+Subscription Fees Revenue: 1,250,000 SAR
+Interest Income: 380,000 SAR
+Other Revenue: 70,000 SAR
+Total Gross Revenue: 4,550,000 SAR
+
+**Cost of Revenue**
+Transaction Processing Costs: 720,000 SAR
+Infrastructure & Hosting Costs: 450,000 SAR
+Third-Party Service Fees: 170,000 SAR
+Total Cost of Revenue: 1,340,000 SAR
+
+Gross Profit: 3,210,000 SAR
+Gross Profit Margin: 70.5%
+
+**Operating Expenses**
+Research and Development: 900,000 SAR
+Sales and Marketing: 650,000 SAR
+General and Administrative: 410,000 SAR
+Total Operating Expenses: 1,960,000 SAR
+
+Operating Income (EBIT): 1,250,000 SAR
+
+**Non-Operating Items**
+Interest Expense: (36,000) SAR
+Gains on Investments: 15,000 SAR
+
+Profit Before Tax (EBT): 1,229,000 SAR
+
+Provision for Income Taxes: (93,800) SAR
+Net Profit After Tax: 1,135,200 SAR
+
+Earnings Per Share (EPS) - Basic: 0.38 SAR
+
+---
+**4. Balance Sheet Summary (as of June 30, 2025)**
+---
+**Assets**
+**Current Assets**
+Cash and Cash Equivalents: 13,839,600 SAR
+Accounts Receivable: 3,400,000 SAR
+Prepaid Expenses: 680,000 SAR
+Total Current Assets: 17,919,600 SAR
+
+**Non-Current Assets**
+Property, Plant, and Equipment (Net): 3,900,000 SAR
+Intangible Assets: 2,650,000 SAR
+Goodwill: 1,500,000 SAR
+Total Non-Current Assets: 8,050,000 SAR
+
+**Total Assets: 25,969,600 SAR**
+
+**Liabilities and Equity**
+**Liabilities**
+Accounts Payable: 2,300,000 SAR
+Accrued Expenses: 1,450,000 SAR
+Total Current Liabilities: 3,750,000 SAR
+Long-Term Debt: 4,650,000 SAR
+Total Liabilities: 8,400,000 SAR
+
+**Shareholders' Equity**
+Common Stock: 5,000,000 SAR
+Retained Earnings: 9,789,600 SAR
+Total Equity: 14,789,600 SAR
+
+**Total Liabilities and Equity: 25,969,600 SAR**
+
+---
+**5. Cash Flow Statement (For Q2 2025)**
+---
+**Cash Flow from Operating Activities**
+Net Income: 1,135,200 SAR
+Adjustments (Depreciation, Amortization): 270,000 SAR
+Changes in Working Capital: (150,000) SAR
+Net Cash from Operations: 1,255,200 SAR
+
+**Cash Flow from Investing Activities**
+Purchase of Property and Equipment: (200,000) SAR
+Capitalized Software Development: (100,000) SAR
+Net Cash used in Investing: (300,000) SAR
+
+**Cash Flow from Financing Activities**
+Repayment of Long-Term Debt: (250,000) SAR
+Net Cash from Financing: (250,000) SAR
+
+Net Increase in Cash: 705,200 SAR
+Cash at Beginning of Period (Apr 1, 2025): 13,134,400 SAR
+Cash at End of Period (Jun 30, 2025): 13,839,600 SAR
+
+---
+**6. Q2 Key Operational and Business Metrics**
+---
+**User Metrics**
+New Users Acquired in Q2: 175,300
+Customer Acquisition Cost (CAC) for Q2: 3.71 SAR
+Monthly Active Users (MAU) at Quarter-End: 1,100,000
+Customer Churn Rate (Quarterly): 1.2%
+
+**Transaction Metrics**
+Total Number of Transactions in Q2: 7,950,000
+Average Transaction Value for Q2: 32.08 SAR
+Payment Gateway Uptime for Q2: 99.99%
+
+---
+**7. Update on Strategic Initiatives**
+---
+Product Innovation: AI-driven tools have entered the internal alpha testing phase with positive feedback.
+Market Expansion: Finalized market entry strategy for one new GCC country; preparing for a soft launch in Q4.
+Strategic Partnerships: A memorandum of understanding (MOU) has been signed with one major banking partner.

@@ -1,0 +1,135 @@
+**Q3 2025 Report for FinSecure Corp.**
+**For the Quarter Ended: September 30, 2025**
+
+---
+**1. Management Overview**
+---
+To our valued stakeholders,
+The third quarter of 2025 was a period of exceptional execution and strategic advancement for FinSecure Corp.
+We achieved record quarterly revenue and successfully launched the closed beta of our new AI-driven financial tools, which received overwhelmingly positive feedback.
+Our growth in user base and transaction volume remains strong, and we have formalized a key banking partnership that will be instrumental for future growth.
+We are entering the final quarter of the year with significant momentum and a clear path to achieving our annual goals.
+
+---
+**2. Q3 2025 Financial Highlights**
+---
+Total Quarterly Revenue: 4,900,000 SAR
+Quarterly Revenue Growth vs. Q3 2024: 24.1%
+Net Profit After Tax: 1,288,000 SAR
+Total Transaction Volume (TTV) for Q3: 280,000,000 SAR
+Total Active Users at Quarter-End: 1,720,800
+New Users Acquired in Q3: 195,300
+
+---
+**3. Income Statement (For the Three Months Ended September 30, 2025)**
+---
+**Revenue**
+Transaction Fees Revenue: 3,050,000 SAR
+Subscription Fees Revenue: 1,350,000 SAR
+Interest Income: 410,000 SAR
+Other Revenue: 90,000 SAR
+Total Gross Revenue: 4,900,000 SAR
+
+**Cost of Revenue**
+Transaction Processing Costs: 780,000 SAR
+Infrastructure & Hosting Costs: 480,000 SAR
+Third-Party Service Fees: 180,000 SAR
+Total Cost of Revenue: 1,440,000 SAR
+
+Gross Profit: 3,460,000 SAR
+Gross Profit Margin: 70.6%
+
+**Operating Expenses**
+Research and Development: 980,000 SAR
+Sales and Marketing: 700,000 SAR
+General and Administrative: 420,000 SAR
+Total Operating Expenses: 2,100,000 SAR
+
+Operating Income (EBIT): 1,360,000 SAR
+
+**Non-Operating Items**
+Interest Expense: (35,000) SAR
+Gains on Investments: 10,000 SAR
+
+Profit Before Tax (EBT): 1,335,000 SAR
+
+Provision for Income Taxes: (47,000) SAR
+Net Profit After Tax: 1,288,000 SAR
+
+Earnings Per Share (EPS) - Basic: 0.43 SAR
+
+---
+**4. Balance Sheet Summary (as of September 30, 2025)**
+---
+**Assets**
+**Current Assets**
+Cash and Cash Equivalents: 15,027,600 SAR
+Accounts Receivable: 3,700,000 SAR
+Prepaid Expenses: 700,000 SAR
+Total Current Assets: 19,427,600 SAR
+
+**Non-Current Assets**
+Property, Plant, and Equipment (Net): 4,050,000 SAR
+Intangible Assets: 2,800,000 SAR
+Goodwill: 1,500,000 SAR
+Total Non-Current Assets: 8,350,000 SAR
+
+**Total Assets: 27,777,600 SAR**
+
+**Liabilities and Equity**
+**Liabilities**
+Accounts Payable: 2,500,000 SAR
+Accrued Expenses: 1,500,000 SAR
+Total Current Liabilities: 4,000,000 SAR
+Long-Term Debt: 4,400,000 SAR
+Total Liabilities: 8,400,000 SAR
+
+**Shareholders' Equity**
+Common Stock: 5,000,000 SAR
+Retained Earnings: 11,077,600 SAR
+Total Equity: 16,077,600 SAR
+
+**Total Liabilities and Equity: 27,777,600 SAR**
+
+---
+**5. Cash Flow Statement (For Q3 2025)**
+---
+**Cash Flow from Operating Activities**
+Net Income: 1,288,000 SAR
+Adjustments (Depreciation, Amortization): 290,000 SAR
+Changes in Working Capital: (280,000) SAR
+Net Cash from Operations: 1,298,000 SAR
+
+**Cash Flow from Investing Activities**
+Purchase of Property and Equipment: (250,000) SAR
+Capitalized Software Development: (150,000) SAR
+Net Cash used in Investing: (400,000) SAR
+
+**Cash Flow from Financing Activities**
+Repayment of Long-Term Debt: (250,000) SAR
+Net Cash from Financing: (250,000) SAR
+
+Net Increase in Cash: 648,000 SAR
+Cash at Beginning of Period (Jul 1, 2025): 14,379,600 SAR
+Cash at End of Period (Sep 30, 2025): 15,027,600 SAR
+
+---
+**6. Q3 Key Operational and Business Metrics**
+---
+**User Metrics**
+New Users Acquired in Q3: 195,300
+Customer Acquisition Cost (CAC) for Q3: 3.58 SAR
+Monthly Active Users (MAU) at Quarter-End: 1,250,000
+Customer Churn Rate (Quarterly): 1.1%
+
+**Transaction Metrics**
+Total Number of Transactions in Q3: 8,800,000
+Average Transaction Value for Q3: 31.82 SAR
+Payment Gateway Uptime for Q3: 99.98%
+
+---
+**7. Update on Strategic Initiatives**
+---
+Product Innovation: Closed beta for AI-driven tools completed successfully with high user satisfaction scores; preparing for a full launch in Q1 2026.
+Market Expansion: Operational framework and local team hiring for the new GCC market are in progress; on track for a Q4 2025 soft launch.
+Strategic Partnerships: The definitive agreement with our new banking partner has been signed, with technical integration now underway.

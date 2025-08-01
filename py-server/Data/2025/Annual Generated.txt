@@ -1,0 +1,143 @@
+**Annual Report for FinSecure Corp.**
+**For the Fiscal Year Ended: December 31, 2025**
+
+---
+**1. Letter from the CEO**
+---
+To our valued stakeholders,
+2025 has been a transformative year for FinSecure Corp., defined by record growth and the successful execution of our most ambitious strategic goals.
+We achieved a significant 23% increase in annual revenue, driven by strong user adoption and the expansion of our service offerings.
+This year, we launched the successful beta of our next-generation AI financial tools, signed a landmark partnership with a major financial institution, and laid the groundwork for our first international expansion.
+These achievements are a direct result of our team's relentless dedication and our unwavering focus on delivering value to our customers. We enter 2026 in our strongest position ever, ready to build on this incredible momentum.
+
+---
+**2. 2025 Full-Year Financial Highlights**
+---
+Total Annual Revenue: 18,750,000 SAR
+Annual Revenue Growth vs. 2024: 22.9%
+Full-Year Net Profit After Tax: 4,777,600 SAR
+Full-Year Total Transaction Volume (TTV): 1,065,000,000 SAR
+Total Active Users at Year-End: 1,921,100
+Total New Users Acquired in 2025: 720,600
+
+---
+**3. Detailed Income Statement (Full Year 2025)**
+---
+**Revenue**
+Transaction Fees Revenue: 11,800,000 SAR
+Subscription Fees Revenue: 4,950,000 SAR
+Interest Income: 1,590,000 SAR
+Other Revenue: 410,000 SAR
+Total Gross Revenue: 18,750,000 SAR
+
+**Cost of Revenue**
+Transaction Processing Costs: 2,920,000 SAR
+Infrastructure & Hosting Costs: 1,830,000 SAR
+Third-Party Service Fees: 690,000 SAR
+Total Cost of Revenue: 5,440,000 SAR
+
+Gross Profit: 13,310,000 SAR
+Gross Profit Margin: 71.0%
+
+**Operating Expenses**
+Research and Development: 3,780,000 SAR
+Sales and Marketing: 2,680,000 SAR
+General and Administrative: 1,660,000 SAR
+Total Operating Expenses: 8,120,000 SAR
+
+Operating Income (EBIT): 5,190,000 SAR
+
+**Non-Operating Items**
+Interest Expense: (143,000) SAR
+Gains on Investments: 30,000 SAR
+
+Profit Before Tax (EBT): 5,077,000 SAR
+
+Provision for Income Taxes: (299,400) SAR
+Net Profit After Tax: 4,777,600 SAR
+
+Earnings Per Share (EPS) - Basic: 1.59 SAR
+
+---
+**4. Balance Sheet (as of December 31, 2025)**
+---
+**Assets**
+**Current Assets**
+Cash and Cash Equivalents: 15,925,600 SAR
+Accounts Receivable: 4,100,000 SAR
+Prepaid Expenses: 750,000 SAR
+Total Current Assets: 20,775,600 SAR
+
+**Non-Current Assets**
+Property, Plant, and Equipment (Net): 4,300,000 SAR
+Intangible Assets: 3,000,000 SAR
+Goodwill: 1,500,000 SAR
+Total Non-Current Assets: 8,800,000 SAR
+
+**Total Assets: 29,575,600 SAR**
+
+**Liabilities and Equity**
+**Liabilities**
+Accounts Payable: 2,800,000 SAR
+Accrued Expenses: 1,600,000 SAR
+Total Current Liabilities: 4,400,000 SAR
+Long-Term Debt: 4,150,000 SAR
+Total Liabilities: 8,550,000 SAR
+
+**Shareholders' Equity**
+Common Stock: 5,000,000 SAR
+Retained Earnings: 12,477,600 SAR
+Total Equity: 21,025,600 SAR
+
+**Total Liabilities and Equity: 29,575,600 SAR**
+
+---
+**5. Cash Flow Statement (Full Year 2025)**
+---
+**Cash Flow from Operating Activities**
+Net Income: 4,777,600 SAR
+Adjustments (Depreciation, Amortization): 1,090,000 SAR
+Changes in Working Capital: (830,000) SAR
+Net Cash from Operations: 5,037,600 SAR
+
+**Cash Flow from Investing Activities**
+Purchase of Property and Equipment: (900,000) SAR
+Capitalized Software Development: (500,000) SAR
+Net Cash used in Investing: (1,400,000) SAR
+
+**Cash Flow from Financing Activities**
+Repayment of Long-Term Debt: (1,000,000) SAR
+Net Cash from Financing: (1,000,000) SAR
+
+Net Increase in Cash: 2,637,600 SAR
+Cash at Beginning of Year (Jan 1, 2025): 13,288,000 SAR
+Cash at End of Year (Dec 31, 2025): 15,925,600 SAR
+
+---
+**6. Full-Year Key Operational and Business Metrics**
+---
+**Quarterly Revenue Breakdown**
+Q1 2025 Revenue: 4,100,000 SAR
+Q2 2025 Revenue: 4,550,000 SAR
+Q3 2025 Revenue: 4,900,000 SAR
+Q4 2025 Revenue (Projected): 5,200,000 SAR
+
+**User Metrics**
+Total New Users Acquired in 2025: 720,600
+Average Customer Acquisition Cost (CAC) for 2025: 3.66 SAR
+Customer Lifetime Value (CLV): 42.50 SAR
+CLV to CAC Ratio: 11.6x
+Customer Churn Rate (Annual): 4.8%
+
+**Transaction Metrics**
+Total Number of Transactions in 2025: 33,250,000
+Payment Gateway Uptime for 2025: 99.99%
+
+---
+**7. 2026 Market Outlook and Strategic Priorities**
+---
+Strategic Outlook: We are poised for accelerated growth in 2026.
+Priority 1 - Product Launch: Full public launch of the AI-driven financial advisory tools in Q1 2026.
+Priority 2 - Partnership Activation: Go-live with integrated products from our new banking partner by Q2 2026.
+Priority 3 - Geographic Expansion: Achieve operational readiness and begin acquiring customers in the new GCC market.
+Financial Goal: Target 25-30% revenue growth for the fiscal year 2026.
