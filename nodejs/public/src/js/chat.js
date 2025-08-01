@@ -19,33 +19,36 @@ function escapeHtml(text) {
 
 function addMessageToChat(message, isUser = true) {
   const content = document.querySelector(".content");
+  let messageElement;
 
   if (isUser) {
     // Add user message (escape HTML for security)
-    const questionDiv = document.createElement("div");
-    questionDiv.className = "question";
-    questionDiv.innerHTML = `
+    messageElement = document.createElement("div");
+    messageElement.className = "question";
+    messageElement.innerHTML = `
       <div class="text">
         <p>${escapeHtml(message)}</p>
       </div>
     `;
-    content.appendChild(questionDiv);
   } else {
     // Add AI response (don't escape as it may contain markdown)
-    const answerDiv = document.createElement("div");
-    answerDiv.className = "answer";
-    answerDiv.innerHTML = `
+    messageElement = document.createElement("div");
+    messageElement.className = "answer";
+    messageElement.innerHTML = `
       <div class="avatar">
         <img src="/src/img/avatar.png" alt="avatar" />
       </div>
       <div class="text">
-        <div><md-block>${message}</md-block></div>
+        <div class="ai-message" data-markdown='${JSON.stringify(
+          message
+        )}'></div>
       </div>
     `;
-    content.appendChild(answerDiv);
   }
 
+  content.appendChild(messageElement);
   scrollToBottom();
+  return messageElement;
 }
 
 function addLoadingIndicator() {
@@ -72,7 +75,23 @@ function removeLoadingIndicator() {
   }
 }
 
+function renderMessage(element) {
+  const rawMarkdown = JSON.parse(element.dataset.markdown);
+  const dirtyHtml = marked.parse(rawMarkdown);
+  const cleanHtml = DOMPurify.sanitize(dirtyHtml);
+  element.innerHTML = cleanHtml;
+  renderMathInElement(element, {
+    delimiters: [
+      { left: "$$", right: "$$", display: true },
+      { left: "$", right: "$", display: false },
+      { left: "\\(", right: "\\)", display: false },
+      { left: "\\[", right: "\\]", display: true }
+    ],
+  });
+}
+
 document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".ai-message").forEach(renderMessage);
   scrollToBottom();
 });
 
@@ -111,7 +130,8 @@ form.addEventListener("submit", function (event) {
 
       if (data.success) {
         // Add AI response to chat
-        addMessageToChat(data.aiResponse, false);
+        const newElement = addMessageToChat(data.aiResponse, false);
+        renderMessage(newElement.querySelector('.ai-message'));
 
         // Update page title if it changed (for first message)
         if (data.title) {
