@@ -201,6 +201,8 @@ def call_rag() -> list:
     else:
         result = call_RAG(message, past_messages, False)
 
+    result[1] = "".join(list(result[1]))
+
     return result
 
 
