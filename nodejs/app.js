@@ -237,7 +237,7 @@ app.get("/chat", (req, res) => {
     fs.readFile(chatsDbPath, "utf-8", (err, data) => {
       let chatsDb = [];
       if (!err && data) {
-        let chatsDb = JSON.parse(data);
+        chatsDb = JSON.parse(data);
       }
 
       // Add the new UUID to the chats-db
