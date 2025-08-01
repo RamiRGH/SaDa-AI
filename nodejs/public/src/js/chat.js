@@ -33,7 +33,16 @@ function addMessageToChat(message, isUser = true) {
   } else {
     // Add AI response (don't escape as it may contain markdown)
     messageElement = document.createElement("div");
-    messageElement.className = "answer";
+    let answerClass = "answer";
+
+    // Check if the message is the unsafe query message
+    if (
+      message === "The query is considered unsafe and will not be processed."
+    ) {
+      answerClass += " unsafe";
+    }
+
+    messageElement.className = answerClass;
     messageElement.innerHTML = `
       <div class="avatar">
         <img src="/src/img/avatar.png" alt="avatar" />
@@ -85,7 +94,7 @@ function renderMessage(element) {
       { left: "$$", right: "$$", display: true },
       { left: "$", right: "$", display: false },
       { left: "\\(", right: "\\)", display: false },
-      { left: "\\[", right: "\\]", display: true }
+      { left: "\\[", right: "\\]", display: true },
     ],
   });
 }
@@ -131,7 +140,7 @@ form.addEventListener("submit", function (event) {
       if (data.success) {
         // Add AI response to chat
         const newElement = addMessageToChat(data.aiResponse, false);
-        renderMessage(newElement.querySelector('.ai-message'));
+        renderMessage(newElement.querySelector(".ai-message"));
 
         // Update page title if it changed (for first message)
         if (data.title) {

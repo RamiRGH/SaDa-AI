@@ -33,24 +33,28 @@
     </div>
     <div class="container">
       <div class="content">
-        <% if (chatMessages.length > 0) { %>
-          <% chatMessages.forEach(function(msg) { %>
-            <div class="question">
-              <div class="text">
-          <p><%= msg.human %></p>
-              </div>
-            </div>
-            <div class="answer">
-              <div class="avatar">
-          <img src="/src/img/avatar.png" alt="avatar" />
-              </div>
-              <div class="text">
-          <div class="ai-message" data-markdown='<%- JSON.stringify(msg.ai) %>'></div>
-              </div>
-            </div>
-          <% }); %>
-        <% } else { %>
-          <p> </p>
+        <% if (chatMessages.length > 0) { %> <%
+        chatMessages.forEach(function(msg) { %>
+        <div class="question">
+          <div class="text">
+            <p><%= msg.human %></p>
+          </div>
+        </div>
+        <div
+          class="answer<%= msg.ai === 'The query is considered unsafe and will not be processed.' ? ' unsafe' : '' %>"
+        >
+          <div class="avatar">
+            <img src="/src/img/avatar.png" alt="avatar" />
+          </div>
+          <div class="text">
+            <div
+              class="ai-message"
+              data-markdown="<%- JSON.stringify(msg.ai) %>"
+            ></div>
+          </div>
+        </div>
+        <% }); %> <% } else { %>
+        <p></p>
         <% } %>
       </div>
       <div class="input">
@@ -76,7 +80,7 @@
               { left: "$$", right: "$$", display: true },
               { left: "$", right: "$", display: false },
               { left: "\\(", right: "\\)", display: false },
-              { left: "\\[", right: "\\]", display: true }
+              { left: "\\[", right: "\\]", display: true },
             ],
           });
         });

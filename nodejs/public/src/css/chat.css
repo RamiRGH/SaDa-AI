@@ -91,6 +91,11 @@
       opacity: 0.7;
       animation: pulse 1.5s ease-in-out infinite;
     }
+
+    &.unsafe .text {
+      color: rgb(12, 11, 11);
+      background-color: #ffe6e6;
+    }
   }
 
   @keyframes pulse {
@@ -157,7 +162,8 @@ table {
   margin-bottom: 1rem;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
