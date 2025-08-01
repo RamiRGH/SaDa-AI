@@ -5,3 +5,4 @@ py-server/.langchain.db
 /py-server/Data/علم
 py-server/.env
 .env
+/nodejs/node_modules
