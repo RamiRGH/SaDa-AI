@@ -6,3 +6,7 @@ py-server/.langchain.db
 py-server/.env
 .env
 /nodejs/node_modules
+nodejs/package-lock.json
+nodejs/package.json
+/nodejs/chats
+nodejs/chats-db.json
