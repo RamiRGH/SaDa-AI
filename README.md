@@ -1,6 +1,6 @@
 # SaDa-AI: Document Analysis Chat Application
 
-This project is a web-based chat application that allows users to upload documents and ask questions about their content. The application uses a Retrieval-Augmented Generation (RAG) model to provide intelligent answers based on the uploaded files.
+This project is a web-based chat application that allows users to upload documents and ask questions about their content. The application uses a Retrieval-Augmented Generation (RAG) model to provide intelligent and robust answers based on the uploaded files.
 
 ## Features
 
